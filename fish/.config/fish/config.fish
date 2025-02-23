@@ -6,8 +6,6 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 #    # smth smth
 #end
 
-#adding SSH agent start
-#eval (ssh-agent -c)
 #adding my own custome variables outside cachyos
 alias dot='cd ~/my_dot_files' #navigates to my git dotfiles repo
 
