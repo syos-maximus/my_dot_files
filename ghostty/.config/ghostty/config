@@ -1,0 +1,10 @@
+#theme = Fahrenheit
+#theme = farmhouse-dark
+#theme = Glacier
+#theme = Lavandula
+#theme = Abernathy
+theme = tokyonight
+cursor-style = block
+background-opacity = 0.86
+mouse-hide-while-typing = true
+adjust-cell-height = 25%
