@@ -3,7 +3,7 @@
 ## Note that that the file structure of these files are setup for gnu stow
 
 To push files to correct directory run the following:
-'stow'
+'stow *package-name*'
 
 
 ## Fish Functions
