@@ -9,3 +9,6 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 #adding my own custome variables outside cachyos
 alias dot='cd ~/my_dot_files' #navigates to my git dotfiles repo
 
+#adding enviroment variables
+#note this location is sym linked
+export SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt
