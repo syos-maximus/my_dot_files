@@ -8,6 +8,7 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 #adding my own custome variables outside cachyos
 alias dot='cd ~/my_dot_files' #navigates to my git dotfiles repo
+alias github='ssh-add ~/.ssh/github-key' #automates the authentication of githup SSH key
 
 #adding enviroment variables
 #note this location is sym linked
