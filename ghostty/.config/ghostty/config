@@ -8,3 +8,6 @@ cursor-style = block
 background-opacity = 0.86
 mouse-hide-while-typing = true
 adjust-cell-height = 25%
+font-family = Fira Code
+#font-family = Cascadia Code
+font-family = CaskaydiaCoveNerdFontMono-Bold
