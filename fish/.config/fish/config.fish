@@ -1,4 +1,5 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
+fish_config theme choose "Dracula Official"
 
 # overwrite greeting
 # potentially disabling fastfetch

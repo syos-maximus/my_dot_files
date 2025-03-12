@@ -3,6 +3,12 @@
 #theme = Glacier
 #theme = Lavandula
 #theme = Abernathy
+#theme = tokyonight
+theme = dracula
+theme = tokyonight
+theme = tokyonight
+theme = tokyonight
+theme = tokyonight
 theme = tokyonight
 cursor-style = block
 background-opacity = 0.86
