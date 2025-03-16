@@ -39,7 +39,6 @@ starship init fish | source
 #adding fzf key bindings and fuzzy completion
 fzf --fish | source
 
-#adding a comment to test side by side diff
 #Can change format of fzf configurations
 #set fzf_git_log_format "%H %s"
 
