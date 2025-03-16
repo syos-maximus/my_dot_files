@@ -10,8 +10,9 @@
 # : Flavor {{{
 
 [flavor]
-dark  = ""
-light = ""
+use = "dracula"
+#dark  = ""
+#light = ""
 
 # : }}}
 
