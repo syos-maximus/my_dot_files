@@ -15,12 +15,14 @@ alias gb='systemctl suspend'
 alias gs='git status'
 alias ga='git add '
 alias gc='git commit -m '
-
+alias timeshift='sudo -E timeshift-launcher'
 
 #-------adding enviroment variables
 #note this location is sym linked
 export SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt
 export EDITOR=vim
+set -gx EDITOR "vim"
+set -gx VISUAL "vim"
 
 
 #adding wrapper for yazi to change directory when browsing
