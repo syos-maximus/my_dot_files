@@ -22,3 +22,11 @@ vim.opt.linebreak = true --prevents words from being split during line wrap
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- copy indent from current line when starting new line
+vim.opt.autoindent = true
+
+--Setting width of tabs
+vim.opt.shiftwidth = 4 --sets 4 spaces per indention
+vim.opt.tabstop = 4 -- sets 4 spaces per tab
+vim.opt.softtabstop = 4 -- sets 4 spaces per tab
+vim.opt.expandtab = true -- converts tabs to spaces
