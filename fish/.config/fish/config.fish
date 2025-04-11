@@ -21,8 +21,8 @@ alias aur='cd ~/aur_clone_directory'
 #note this location is sym linked
 export SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt
 export EDITOR=vim
-set -gx EDITOR "vim"
-set -gx VISUAL "vim"
+set -gx EDITOR "nvim"
+set -gx VISUAL "nvim"
 
 
 #adding wrapper for yazi to change directory when browsing
