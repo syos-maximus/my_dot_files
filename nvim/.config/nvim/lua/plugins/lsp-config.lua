@@ -7,12 +7,23 @@ return {
 
 	},
 	{
-		"williamboman/mason-lspconfig.nvim",
-		config = function() 
+        "williamboman/mason-lspconfig.nvim",
+        config = function()
+            -- lua_ls = lua; ts_ls = javascript; cssls = css, superhtml=html
 			require("mason-lspconfig").setup({
-			ensure_installed = {"lua_ls", "harper_ls", "hydra_lsp", "superhtml"}
+			ensure_installed = {"lua_ls", "ts_ls", "cssls", "superhtml"}
 			})
 		end
-	}
+	},
+    {
+        "neovim/nvim-lspconfig",
+        config = function()
+            local lspconfig = require("lspconfig")
+            lspconfig.lua_ls.setup({})
+            lspconfig.ts_ls.setup({})
+            lspconfig.cssls.setup({})
+            lspconfig.superhtml.setup({})
+        end
+    }
 }
 

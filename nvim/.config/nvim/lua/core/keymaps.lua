@@ -11,4 +11,11 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- lsp keympas
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
+vim.keymap.set({'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
 
+-- note the below are in the telecsop plugins because of the local function builtin
+--vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+--vim.keymap.set('n', '<leader>fg' , builtin.live_grep, {})
