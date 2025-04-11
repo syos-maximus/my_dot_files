@@ -23,6 +23,7 @@ return {
             lspconfig.ts_ls.setup({})
             lspconfig.cssls.setup({})
             lspconfig.superhtml.setup({})
+            vim.diagnostic.config({virtual_text = false}) -- change this to true to high in line warnings/error flags
         end
     }
 }
