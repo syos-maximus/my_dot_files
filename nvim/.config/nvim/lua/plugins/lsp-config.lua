@@ -10,7 +10,7 @@ return {
 	{
         "williamboman/mason-lspconfig.nvim",
         config = function()
-            -- lua_ls = lua; ts_ls = javascript; cssls = css, superhtml=html
+            -- lua_ls = lua; ts_ls = javascript; cssls = css, superhtml=html, texlab = LaTeX
 			require("mason-lspconfig").setup({
 			ensure_installed = {"lua_ls", "ts_ls", "cssls", "superhtml"}
 			})
