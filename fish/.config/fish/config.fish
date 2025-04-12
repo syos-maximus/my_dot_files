@@ -17,6 +17,8 @@ alias ga='git add '
 alias gc='git commit -m '
 alias timeshift='sudo -E timeshift-launcher'
 alias aur='cd ~/aur_clone_directory'
+#adding shortcuts to mount cloud drives with rclone (rclone already configured)
+alias dropbox='rclone mount dropbox: ~/Dropbox/ --daemon'
 #-------adding enviroment variables
 #note this location is sym linked
 export SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt
