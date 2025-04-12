@@ -1,4 +1,4 @@
---adding treesitter plugin
+--This plugin does highlighting and indenting. Will automicatlly install language to update highlghting/indenting
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",

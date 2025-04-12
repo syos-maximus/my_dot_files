@@ -1,3 +1,4 @@
+-- This plugin allos fuzzy finding and grepping of code lines/ files. Also collects coda actions from the lsp config to come up in pop window
 return {
     {
 	'nvim-telescope/telescope.nvim', tag = '0.1.8',

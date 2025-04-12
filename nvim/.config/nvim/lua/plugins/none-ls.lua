@@ -1,3 +1,4 @@
+-- This plugin calls the formatters and linters
 return {
 	"nvimtools/none-ls.nvim",
 	config = function()

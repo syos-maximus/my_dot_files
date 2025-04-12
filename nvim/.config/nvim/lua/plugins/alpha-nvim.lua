@@ -1,3 +1,4 @@
+--This plugin is for the cool dashboard
 return {
 	"goolord/alpha-nvim",
 	dependencies = {

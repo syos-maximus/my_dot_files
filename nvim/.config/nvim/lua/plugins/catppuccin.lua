@@ -1,3 +1,4 @@
+-- This plugin is for the color scheme
 return {
 	"catppuccin/nvim",
 	lazy = false,
