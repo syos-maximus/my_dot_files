@@ -46,3 +46,10 @@ fzf --fish | source
 #Can change format of fzf configurations
 #set fzf_git_log_format "%H %s"
 
+# Adding LaTeX directory to path
+if test -d /usr/local/texlive/2025/bin/x86_64-linux
+    if not contains -- /usr/local/texlive/2025/bin/x86_64-linux $PATH
+        set -p PATH /usr/local/texlive/2025/bin/x86_64-linux 
+    end
+end
+
