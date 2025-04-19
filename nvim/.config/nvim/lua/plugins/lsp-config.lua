@@ -8,6 +8,7 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		lazy = false,
 		config = function()
 			-- lua_ls = lua; ts_ls = javascript; cssls = css, superhtml=html, texlab = LaTeX
 			require("mason-lspconfig").setup({
@@ -18,11 +19,21 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({})
-			lspconfig.ts_ls.setup({})
-			lspconfig.cssls.setup({})
-			lspconfig.superhtml.setup({})
+			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.ts_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.superhtml.setup({
+				capabilities = capabilities,
+			})
 			vim.diagnostic.config({ virtual_text = false }) -- change this to true to show in line warnings/error flags
 		end,
 	},
