@@ -1,4 +1,5 @@
 return {
+
     {
         "hrsh7th/cmp-nvim-lsp",
     },
@@ -14,6 +15,7 @@ return {
         config = function()
             local cmp = require("cmp")
             require("luasnip.loaders.from_vscode").lazy_load()
+            require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"}) -- adding custom snippets
             cmp.setup({
                 snippet = {
                     expand = function(args)
