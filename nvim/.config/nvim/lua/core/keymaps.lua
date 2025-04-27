@@ -22,3 +22,8 @@ vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 --
 --non-ls.lua keymaps
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+
+-- split window key commands
+vim.keymap.set("n", "<C-u>",":vsplit<CR>" ,{}) -- vertical split
+vim.keymap.set("n", "<C-i>",":split<CR>" ,{}) -- horizontal split
+
