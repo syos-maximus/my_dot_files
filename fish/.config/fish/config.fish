@@ -36,6 +36,12 @@ function y
 	end
 	rm -f -- "$tmp"
 end
+#adding script to automatically start tmux/attach to an already active session of tmux
+if status is-interactive
+    if not set -q TMUX
+        tmux attach || tmux new-session
+    end
+end
 
 #adding starship init
 starship init fish | source
