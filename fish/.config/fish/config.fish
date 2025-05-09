@@ -43,6 +43,13 @@ if status is-interactive
         tmux attach || tmux new-session
     end
 end
+#adding two funtions to call advcp from https://github.com/jarun/advcpmv in order to show progress bars for cp and mv commands
+function cp
+  /usr/local/bin/advcp -g $argv
+end
+function mv
+  /usr/local/bin/advmv -g $argv
+end
 
 #adding starship init
 starship init fish | source
