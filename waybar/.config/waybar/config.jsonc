@@ -27,7 +27,8 @@
     "format-ethernet": "<span foreground='#f5e0dc'>󰈀</span>",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "<span foreground='#f5e0dc'>  </span>Disconnected",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+    "tooltip-format-ethernet": "{ipaddr}"
   },
   "pulseaudio": {
       "format": "{icon}",
