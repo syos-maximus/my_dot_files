@@ -594,6 +594,10 @@
         "0": {
           "key": "G",
           "label": "G"
+        },
+        "2": {
+          "key": "LEFT",
+          "label": "←"
         }
       },
       "triggers": null
@@ -609,9 +613,9 @@
           "key": "H",
           "label": "H"
         },
-        "1": {
-          "key": "LEFT",
-          "label": "←"
+        "2": {
+          "key": "DOWN",
+          "label": "↓"
         }
       },
       "triggers": null
@@ -627,9 +631,9 @@
           "key": "J",
           "label": "J"
         },
-        "1": {
-          "key": "DOWN",
-          "label": "↓"
+        "2": {
+          "key": "UP",
+          "label": "↑"
         }
       },
       "triggers": null
@@ -645,9 +649,9 @@
           "key": "K",
           "label": "K"
         },
-        "1": {
-          "key": "UP",
-          "label": "↑"
+        "2": {
+          "key": "RIGHT",
+          "label": "→"
         }
       },
       "triggers": null
@@ -662,10 +666,6 @@
         "0": {
           "key": "L",
           "label": "L"
-        },
-        "1": {
-          "key": "RIGHT",
-          "label": "→"
         }
       },
       "triggers": null
@@ -941,9 +941,13 @@
       "w": 5,
       "h": 4,
       "layers": {
-        "0": {
-          "key": "#:LayerLock[1]",
-          "label": "LOCK-1"
+        "1": {
+          "key": "#:LayerLock[2]",
+          "label": "LOCK-2"
+        },
+        "2": {
+          "key": "#:LayerLock[2]",
+          "label": "LOCK-2"
         }
       },
       "triggers": null
