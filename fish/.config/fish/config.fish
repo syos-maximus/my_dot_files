@@ -4,8 +4,8 @@ fish_config theme choose "Dracula Official"
 # overwrite greeting
 # potentially disabling fastfetch
 function fish_greeting
-	#	pokeget gengar --hide-name | fastfetch --file-raw -
-	fortune | cowsay | fastfetch --file-raw -
+    #pokeget gengar --hide-name | fastfetch --file-raw -
+    fortune | cowsay | fastfetch --file-raw -
 end
 
 #adding my own custome variables outside cachyos
