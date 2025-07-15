@@ -27,3 +27,8 @@ vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 vim.keymap.set("n", "<C-u>",":vsplit<CR>" ,{}) -- vertical split
 vim.keymap.set("n", "<C-i>",":split<CR>" ,{}) -- horizontal split
 
+-- keycommands for vimtex
+-- space ll will start automicatic compiling. File will compile after every save
+-- space lk will stop compiling
+-- space lc will clear aux files
+-- 
