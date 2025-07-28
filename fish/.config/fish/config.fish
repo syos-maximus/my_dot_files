@@ -10,6 +10,7 @@ end
 
 #adding my own custome variables outside cachyos
 alias dot='cd ~/my_dot_files' #navigates to my git dotfiles repo
+alias steam_games='cd ~/.local/share/Steam/steamapps/common' #navigates to my git dotfiles repo
 alias github='ssh-add ~/.ssh/github-key' #automates the authentication of github SSH key
 alias gitlab='ssh-add ~/.ssh/gitlab-key' #automates the authentication of gitlab SSH key
 alias gb='systemctl suspend'
