@@ -41,7 +41,6 @@
     "tooltip-format-ethernet": "{ipaddr}",
     "on-click": "protonvpn-app",
     "on-click-right": "mullvad-vpn",
-    "exec-on-click": "curl -s www.icanhazip.com",
   },
   "pulseaudio": {
     "format": "{icon}",
