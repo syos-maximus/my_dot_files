@@ -98,10 +98,12 @@ button:hover {
 #idle_inhibitor {
     margin-right: 12px;
     color: #7cb342;
+    border-bottom: 2px solid #7cb342;
 }
 
 #idle_inhibitor.activated {
     color: @red;
+    border-bottom: 2px solid @red;
 }
 
 #battery {
