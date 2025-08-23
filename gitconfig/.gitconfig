@@ -8,3 +8,6 @@
     line-numbers = true
 [merge]
 	conflictStyle = zdiff3
+[user]
+	email = sebastian@aerolaw.com
+	name = syos-maximus
