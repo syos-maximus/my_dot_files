@@ -3,7 +3,7 @@
 #theme = Glacier
 #theme = Lavandula
 #theme = Abernathy
-theme = tokyonight
+theme = TokyoNight
 #theme = dracula
 cursor-style = block
 background-opacity = 0.86
@@ -13,4 +13,6 @@ font-family = Fira Code
 #font-family = Cascadia Code
 font-family = CaskaydiaCoveNerdFontMono-Bold
 #forces ghostty to close even if active service, ok because i have tmux running
-confirm-close-surface = false 
+confirm-close-surface = false
+#setting mouse scroll wheel to 1 line
+mouse-scroll-multiplier = 1
