@@ -19,6 +19,7 @@ alias ga='git add '
 alias gc='git commit -m '
 alias timeshift='sudo -E timeshift-launcher'
 alias aur='cd ~/aur_clone_directory'
+alias bye='sudo poweroff -i -f'
 #adding shortcuts to mount cloud drives with rclone (rclone already configured)
 alias dropbox='rclone mount dropbox: ~/Dropbox/ --daemon'
 #-------adding enviroment variables
