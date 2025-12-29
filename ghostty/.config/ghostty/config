@@ -16,3 +16,4 @@ font-family = CaskaydiaCoveNerdFontMono-Bold
 confirm-close-surface = false
 #setting mouse scroll wheel to 1 line
 mouse-scroll-multiplier = 1
+shell-integration-features = ssh-terminfo
