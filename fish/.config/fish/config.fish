@@ -28,8 +28,7 @@ export SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt
 export EDITOR=vim
 set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
-
-
+set -gx  LC_ALL en_US.UTF-8  
 #adding wrapper for yazi to change directory when browsing
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
