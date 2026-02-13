@@ -45,12 +45,12 @@ if status is-interactive
     end
 end
 #adding two funtions to call advcp from https://github.com/jarun/advcpmv in order to show progress bars for cp and mv commands
-function cp
-  /usr/local/bin/advcp -g $argv
-end
-function mv
-  /usr/local/bin/advmv -g $argv
-end
+#function cp
+#  /usr/local/bin/advcp -g $argv
+#end
+#function mv
+#  /usr/local/bin/advmv -g $argv
+#end
 
 #adding starship init
 starship init fish | source
@@ -62,9 +62,9 @@ fzf --fish | source
 #set fzf_git_log_format "%H %s"
 
 # Adding LaTeX directory to path
-if test -d /usr/local/texlive/2025/bin/x86_64-linux
-    if not contains -- /usr/local/texlive/2025/bin/x86_64-linux $PATH
-        set -p PATH /usr/local/texlive/2025/bin/x86_64-linux 
-    end
-end
+#if test -d /usr/local/texlive/2025/bin/x86_64-linux
+#    if not contains -- /usr/local/texlive/2025/bin/x86_64-linux $PATH
+#        set -p PATH /usr/local/texlive/2025/bin/x86_64-linux 
+#    end
+#end
 
