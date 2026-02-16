@@ -4,24 +4,22 @@
     // -------------------------------------------------------------------------
 
     "layer": "top",
-
     "position": "top",
-
     //"height": 20,
 
     "margin-left": 0,
     "margin-bottom": 0,
     "margin-right": 0,
+    "margin-top": 0,
 
     "spacing": 5, // Gaps between modules (4px)
 
     "modules-left": [
         "custom/os_button",
         "hyprland/workspaces",
-        "tray",
+        "tray"
         //"idle_inhibitor",
         //"mpd"
-        "custom/spotify"
     ],
     "modules-center": [
         //"hyprland/window"
@@ -30,12 +28,10 @@
         //"custom/gammastep"
     ],
     "modules-right": [
-        "backlight",
         "network",
         "custom/storage",
         "memory",
         "cpu",
-        "battery",
         //"pulseaudio",
         "wireplumber",
         "custom/screenshot_t",
@@ -60,22 +56,6 @@
         "format":" ",
         "on-click": "~/.config/hypr/scripts/screenshot_full",
         "on-click-right":"~/.config/hypr/scripts/screenshot_area"
-    },
-
-    "clock#1": {
-        "format": " {:%a}",
-        "tooltip": false,
-        "on-click": "gsimplecal"
-    },
-    "clock#2": {
-        "format": " {:%d-%h-%Y}",
-        "tooltip": false,
-        "on-click": "gsimplecal"
-    },
-    "clock#3": {
-        "format": " {:%H:%M:%S %p}",
-        "tooltip": false,
-        "on-click": "gsimplecal"
     },
 
     "memory": {
@@ -191,41 +171,10 @@
         "on-click": "wlogout"
     },
 
-    "clock": {
-        "format": "  {:%H:%M   %e %b}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "today-format": "<b>{}</b>"
-    },
-
     "clock#date": {
         "format": "󰥔  {:%H:%M \n %e %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>"
-    },
-
-    "custom/gammastep": {
-      "interval": 5,
-      "return-type": "json",
-      "exec": {
-        "pre": "if unit_status=\"$(systemctl --user is-active gammastep)\"; then\nstatus=\"$unit_status ($(journalctl --user -u gammastep.service -g 'Period: ' | tail -1 | cut -d ':' -f6 | xargs))\"\nelse\nstatus=\"$unit_status\"\nfi",
-        "alt": "${status:-inactive}",
-        "tooltip": "Gammastep is $status",
-      },
-      "format": "{icon}",
-      "format-icons": {
-        "activating": "󰁪 ",
-        "deactivating": "󰁪 ",
-        "inactive": "? ",
-        "active (Night)": " ",
-        "active (Nighttime)": " ",
-        "active (Transition (Night)": " ",
-        "active (Transition (Nighttime)": " ",
-        "active (Day)": " ",
-        "active (Daytime)": " ",
-        "active (Transition (Day)": " ",
-        "active (Transition (Daytime)": " ",
-      },
-      "on-click": "systemctl --user is-active gammastep && systemctl --user stop gammastep || systemctl --user start gammastep",
     },
 
     "cpu": {
@@ -267,12 +216,6 @@
         "max-length": 35,
         "exec": "$HOME/.scripts/title"
     },
-
-    /*"custom/keyboard": {
-        "format": " {}",
-        "interval": 1,
-        "exec": "$HOME/.config/waybar/get_kbdlayout.sh"
-    },*/
 
     "hyprland/workspaces": {
         "all-outputs": true,
@@ -356,4 +299,29 @@
     "on-click": "wofi --show drun --allow-images",
     "tooltip": false,
   },
+    "clock#new": {
+        "format": "󰥔  {:%H:%M}  ",
+        "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "tz_up",
+                    "on-scroll-down": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
 }
