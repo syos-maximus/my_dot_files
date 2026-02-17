@@ -3,72 +3,72 @@
 /* padding: top/bottom left/right */
 /* padding: top right bottom left */
 * {
-  border: none;
-  border-radius: 0px;
-  font-family: "MesloLGS Nerd Font Mono Bold";
-  font-size: 15px;
-  font-weight: bold;
-  min-height: 0;
-  padding: 0;
-  margin: 0;
+    border: none;
+    border-radius: 0px;
+    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
 }
 
 window#waybar {
-  background: transparent;
+    background: transparent;
 }
 
 tooltip {
-  background: @base;
-  border: 1px solid @mantle;
-  border-radius: 12px;
+    background: @base;
+    border: 1px solid @mantle;
+    border-radius: 12px;
 }
 
 tooltip label {
-  color: @text;
-  padding: 6px;
+    color: @text;
+    padding: 6px;
 }
 
 #workspaces {
-  background-color: @base;
-  padding: 5px 3px;
-  margin: 0 0 0 12px;
-  border-radius: 18px;
-  border: 1px solid @mantle;
-  color: @crust;
+    background-color: @base;
+    padding: 5px 3px;
+    margin: 0 0 0 12px;
+    border-radius: 18px;
+    border: 1px solid @mantle;
+    color: @crust;
 }
 
 #workspaces button {
-  padding: 0px 6px;
-  margin: 0px 3px;
-  border-radius: 50px;
-  color: transparent;
-  background-color: @base;
-  transition: all 0.3s ease-in-out;
+    padding: 0px 6px;
+    margin: 0px 3px;
+    border-radius: 50px;
+    color: transparent;
+    background-color: @base;
+    transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-  background-color: @blue;
-  color: @base;
-  min-width: 50px;
-  transition: all 0.3s ease-in-out;
-  font-size: 13px;
+    background-color: @blue;
+    color: @base;
+    min-width: 50px;
+    transition: all 0.3s ease-in-out;
+    font-size: 13px;
 }
 
 #workspaces button:hover {
-  background-color: @lavender;
-  color: @base;
-  border-radius: 16px;
-  min-width: 50px;
-  background-size: 400% 400%;
+    background-color: @lavender;
+    color: @base;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
 }
 
 #workspaces button.urgent {
-  background-color: @red;
-  color: @base;
-  border-radius: 16px;
-  min-width: 50px;
-  background-size: 400% 400%;
-  transition: all 0.3s ease-in-out;
+    background-color: @red;
+    color: @base;
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
 }
 
 #idle_inhibitor,
@@ -79,38 +79,38 @@ tooltip label {
 #wireplumber,
 #tray,
 #custom-notification {
-  background-color: @base;
-  padding: 0 15px 0 15px;
-  margin: 0 0 0 12px;
-  border-radius: 50px;
-  border: 1px solid @mantle;
+    background-color: @base;
+    padding: 0 15px 0 15px;
+    margin: 0 12px 0 12px;
+    border-radius: 50px;
+    border: 1px solid @mantle;
 }
 
 #idle_inhibitor {
-  color: @sky;
+    color: @sky;
 }
 
 #clock {
-  color: @lavender;
+    color: @lavender;
 }
 
 #network {
-  color: @green;
+    color: @green;
 }
 
 #memory {
-  color: @teal;
+    color: @yellow;
 }
 
 #cpu {
-  color: @rosewater;
-  padding: 0 20px 0 15px;
+    color: @sapphire;
 }
 
 #wireplumber {
-  color: @peach;
+    color: @peach;
 }
 
 #custom-notification {
-  color: @mauve;
+    color: @mauve;
+    padding: 0 18px 0 15px;
 }
