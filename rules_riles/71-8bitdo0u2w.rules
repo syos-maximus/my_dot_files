@@ -1,0 +1,5 @@
+# 2.4GHz/Dongle
+# note that I got idProduct and idVendor by using the command   lsusb  in terminal
+KERNEL=="hidraw*", ATTRS{idProduct}=="6013", ATTRS{idVendor}=="2dc8", MODE="0660", TAG+="uaccess"
+# Bluetooth
+KERNEL=="hidraw*", KERNELS=="*2DC8:6013*", MODE="0660", TAG+="uaccess"
