@@ -20,6 +20,10 @@ alias gc='git commit -m '
 alias timeshift='sudo -E timeshift-launcher'
 alias aur='cd ~/aur_clone_directory'
 alias bye='sudo poweroff -i -f'
+alias vpn_ca='protonvpn connect --country CA'
+alias vpn_usa='protonvpn connect --country US'
+alias vpn_sweden='protonvpn connect --country SE'
+alias vpn_dis='protonvpn disconnect'
 #adding shortcuts to mount cloud drives with rclone (rclone already configured)
 alias dropbox='rclone mount dropbox: ~/Dropbox/ --daemon'
 #-------adding enviroment variables
