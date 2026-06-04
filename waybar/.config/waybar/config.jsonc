@@ -60,14 +60,14 @@
 
   "memory": {
     "interval": 30,
-    "format": "  {used:0.2f} / {total:0.0f} GB",
+    "format": "<span size='15pt'></span>  {used:0.2f} / {total:0.0f} GB",
     "on-click": "ghostty -e btop",
     "on-click-right": "ghostty -e nvtop",
   },
 
   "network": {
     "format-wifi": " {essid} ({signalStrength}%)",
-    "format-ethernet": "{ifname}: {ipaddr}/{cidr} 󰌗 ",
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr} <span size='15pt'>󰌗</span> ",
     "format-linked": "{ifname} (No IP) 󰌙",
     "format": "",
     "format-disconnected": " ",
@@ -80,16 +80,16 @@
   },
 
   "idle_inhibitor": {
-    "format": "{icon}",
+    "format": "<span size ='20pt'>{icon}</span>",
     "format-icons": {
-      "activated": " ",
-      "deactivated": "󰣇 ",
+      "activated": "",
+      "deactivated": "󰣇",
     },
     "tooltip": "true",
   },
 
   "clock": {
-    "format": "󰥔  {:%H:%M \n %e %b}",
+    "format": "<span size='15pt'>󰥔 </span>{:%H:%M \n<span size='15pt'></span>%e %b}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "today-format": "<b>{}</b>",
     "on-click": "proton-mail",
@@ -99,7 +99,7 @@
     "interval": 1,
     //"format": " {}%", // Icon: microchip
     //"format": "  {max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
-    "format": "  {max_frequency}GHz|{usage}%",
+    "format": "<span size='15pt'></span> {max_frequency}GHz|{usage}%",
     "max-length": 13,
     "min-length": 13,
   },
@@ -127,10 +127,11 @@
   "wireplumber": {
     //"on-click": "pavucontrol",
     "on-click": "ghostty -e wiremix",
-    "on-click-right": "amixer sset Master toggle 1>/dev/null", //this mutes on right click
+    "on-click-middle": "amixer sset Master toggle 1>/dev/null", //this mutes on middle click
+    "on-click-right": "jamesdsp", //opens eq on right click
     //"format": "<span foreground='#fab387'>{icon}</span>  {volume}%",
-    "format": "{icon}  {volume}%",
-    "format-muted": "   {volume}%",
+    "format": "<span size='18pt'>{icon}</span>{volume}%",
+    "format-muted": "<span size='18pt'> </span>{volume}%",
     "format-source": "",
     "format-source-muted": "",
     //"format-muted": "<span foreground='#fab387'> </span>",
