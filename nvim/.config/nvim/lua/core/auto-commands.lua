@@ -6,7 +6,6 @@ vim.api.nvim_set_hl(0, 'YankHighlight', {
   bg = '#12EBEB',  -- background color
   fg = '#1e1e2e',  -- text color (optional)
 })
-
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),

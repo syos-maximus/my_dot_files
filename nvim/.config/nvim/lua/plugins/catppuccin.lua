@@ -1,15 +1,12 @@
--- This plugin is for the color scheme
 return {
-	"catppuccin/nvim",
-	lazy = false,
-	name = "catppuccin",
-	priority = 1000,
-	config = function()
-		vim.cmd.colorscheme "catppuccin-mocha"
-	end
+    addon = {
+        src = 'https://github.com/catppuccin/nvim',
+        name = 'catppuccin',
+    },
+    setup = function ()
+        require('catppuccin').setup({
+            flavour = 'mocha',
+        })
+        vim.cmd.colorscheme('catppuccin')
+    end,
 }
-
-
- -- color options for catppuccin catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-
-
