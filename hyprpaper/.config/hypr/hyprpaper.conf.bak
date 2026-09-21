@@ -1,0 +1,16 @@
+#preload = ~/my_dot_files/background_images/ultrawide/hades2.png
+#preload = ~/my_dot_files/background_images/ultrawide/goku-shenron.jpg
+#preload = ~/my_dot_files/background_images/hades_vertical.jpeg
+
+#setting wallpaper for Asus monitor (top monitor)
+#wallpaper = DP-1,~/my_dot_files/background_images/hades_vertical.jpeg
+#setting wallpaper for LG monitor (bottom monitor)
+#wallpaper = HDMI-A-1, ~/my_dot_files/background_images/ultrawide/pokemon_sith_uw.jpg
+
+wallpaper {
+    monitor = DP-1
+    path = ~/my_dot_files/background_images/ultrawide/hades2.png
+    fit_mode = cover
+}
+#disables hyprland splash text from showing on the bottom
+splash = false 
